@@ -1,0 +1,17 @@
+spin_cons = spin_cst()
+size_spincons_1 = size(spin_cons(:,:,1));
+size_spincons_4 = size(spin_cons(:,:,4));
+size_spincons_2 = size(spin_cons(:,:,2));
+size_spincons_5 = size(spin_cons(:,:,5));
+size_spincons_3 = size(spin_cons(:,:,3));
+size_spincons_6 = size(spin_cons(:,:,6));
+
+disp(size_spincons_1);
+disp(size_spincons_4);
+disp(size_spincons_2);
+disp(size_spincons_5);
+disp(size_spincons_3);
+disp(size_spincons_6);
+H_hf = hyperfine_isotropic(az1, az2, az3, az4, az5, az6)
+size_spincons_1 = size(H_hf);
+disp(size_spincons_6);

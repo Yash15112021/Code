@@ -1,0 +1,12 @@
+function chem_r = chem_reaction(kb,kf,Jex,D,B0)
+
+% chemical reaction rate constants 
+kb = kb;
+kf = kf;
+
+[P_S,P_T] = cissProj(kb,kf,Jex,D,B0);
+
+chem_r = 0.5*(kb*P_S + kf*P_T);
+
+end
+
