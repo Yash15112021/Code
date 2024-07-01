@@ -14,8 +14,8 @@ P_Cir = expm(-1i*diphi*(spincons(:,:,3) + spincons(:,:,6)))*expm(-1i*dithe*(spin
 P_S = P_Cir;
 
 % the recombination state with CISS
-%P_SYield = kron([0 0 0 0;0 0.5*(1 + sin(u)) -0.5*cos(u) 0;0 -0.5*cos(u) 0.5*(1 - sin(u)) 0;0 0 0 0],eye(9));
-%P_T0Yield = kron([0 0 0 0;0 0.5*(1 - sin(u)) 0.5*cos(u) 0;0 0.5*cos(u) 0.5*(1 + sin(u)) 0;0 0 0 0],eye(9));
+%P_SYield = kron([0 0 0 0;0 0.5*(1 - sin(u)) -0.5*cos(u) 0;0 -0.5*cos(u) 0.5*(1 + sin(u)) 0;0 0 0 0],eye(9));
+%P_T0Yield = kron([0 0 0 0;0 0.5*(1 + sin(u)) 0.5*cos(u) 0;0 0.5*cos(u) 0.5*(1 - sin(u)) 0;0 0 0 0],eye(9));
 
 %P_TPYield = kron([0 0 0 0;0 0 0 0;0 0 0 0;0 0 0 1-sin(u)],eye(9));
 %P_TMYield = kron([1 0 0 0;0 0 0 0;0 0 0 0;0 0 0 0],eye(9));
